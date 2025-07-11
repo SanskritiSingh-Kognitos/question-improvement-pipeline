@@ -1,0 +1,610 @@
+id,created_at,request_id,text,type,lexical_path,error_traceback,is_plural,answer_type_hint,failed_answer_id,domain,validation_results,choices
+9y6hfp345p7w5qj5psdeoyssz,2025-04-14 02:33:29.435106+00:00,bezl6ruphcxpk3qsr0kjf6vj1,Please provide,ValueNotKnownQuestion,scanned document|Onboard Date,,False,,,,,
+0bm48zd7nxkrh4e8kaxpsaoyf,2025-03-21 08:56:05.534740+00:00,dfl2iw6rbf2iji3dn947t8clb,Please provide,ValueNotKnownQuestion,item prompt,,False,,,,,
+9t0c0gfwb8wid88r1r12uri4o,2025-02-08 09:42:14.945887+00:00,0rx72g4vk9koide8t132uy7fo,Please provide,ValueNotKnownQuestion,scanned document|carriertype classification,,False,,,,,
+eqepixdeasuwuo1jnfjlogs01,2025-01-10 09:43:33.081823+00:00,2cnssyloacyi4oi5km1rgqykz,Please provide,ValueNotKnownQuestion,OceanFreights,,True,,,,,
+1e499c29wweh9bvh9c3erkh5d,2025-03-31 06:42:44.605963+00:00,1csno0r5jrt16uhvjh8k3uxtz,Please provide,ValueNotKnownQuestion,"scanned document|""INTENDED FCL CY CUT-OFF""",,False,,,,,
+9feau75hxlu0y6r298amw0fah,2025-03-04 22:57:13.009714+00:00,0v2mjxqjdi7vjc0p2kpewgnk3,Please provide,ValueNotKnownQuestion,epicor|domain,,False,,,,,
+6j0at023g3qkcaxrc7ezjfybr,2025-01-08 17:36:44.784140+00:00,a4kg43mr3a0bkzfhvb713de7n,"Do you mean ""the run result"" from ""get the run's result"" above or is this new?",ValueNotKnownQuestion,,,False,,,,,"[""{\""choices\"": [\""the run result\"", \""new\""], \""is_suggestion\"": false}""]"
+4sjtwrknggxzw36pv94ispmyg,2025-01-16 09:01:20.587739+00:00,9eh3z3hsi4hv1p71rrn5duipu,Please provide,ValueNotKnownQuestion,carrier name,,False,,,,,
+9j9c8ocqz63ge6nqyytfnomni,2025-04-07 06:11:51.285452+00:00,ac8w7oql5kg69igb70mjg3g86,Please provide,ValueNotKnownQuestion,"scanned document|first ""Feeder Vessel Name""s",,True,,,,,
+7k3h9i2k4ousn8ukrwjlqmxol,2025-02-26 09:35:39.372072+00:00,dwfxyy707wyhvofddr6zbcjr1,Please provide,ValueNotKnownQuestion,carrier name,,False,,,,,
+der5r9cgoxp46f040sawlzprr,2025-05-07 09:56:46.327883+00:00,4mioss9d9zmp30wkgmynkzkvm,Could not get sharepoint's thing.,NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/app/app.py"", line 101, in invoke_function
+    ret = fn(**kwargs)
+  File ""/tmp/kognitos-sandbox2hu15idl/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 772, in to_get_a_sharepoint_thing
+    return get_a_sharepoint_file(brain, access_token, thing_cpt)
+  File ""/tmp/kognitos-sandbox2hu15idl/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 503, in get_a_sharepoint_file
+    parse_output = UrlParse.parse_sharepoint_url(value_dict['url'][1], is_folder=False)
+  File ""/tmp/kognitos-sandbox2hu15idl/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 286, in parse_sharepoint_url
+    assert parts[1] == 'sites'
+AssertionError
+",,,,,,
+6ie9pea0d0efv6dhprjewt20h,2025-05-07 12:04:12.255974+00:00,1bug3cd0pbohaj7lh4cpu8ldx,Could not get sharepoint's thing.,NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/app/app.py"", line 101, in invoke_function
+    ret = fn(**kwargs)
+  File ""/tmp/kognitos-sandbox4kol4h0q/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 772, in to_get_a_sharepoint_thing
+    return get_a_sharepoint_file(brain, access_token, thing_cpt)
+  File ""/tmp/kognitos-sandbox4kol4h0q/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 503, in get_a_sharepoint_file
+    parse_output = UrlParse.parse_sharepoint_url(value_dict['url'][1], is_folder=False)
+  File ""/tmp/kognitos-sandbox4kol4h0q/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 286, in parse_sharepoint_url
+    assert parts[1] == 'sites'
+AssertionError
+",,,,,,
+612am0lqff3ok6tkeh7lumrv5,2025-05-07 10:15:55.509817+00:00,7hezmh8zce618x6nv8bi9u3hd,Could not get sharepoint's thing.,NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/app/app.py"", line 101, in invoke_function
+    ret = fn(**kwargs)
+  File ""/tmp/kognitos-sandboxhxvypjer/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 772, in to_get_a_sharepoint_thing
+    return get_a_sharepoint_file(brain, access_token, thing_cpt)
+  File ""/tmp/kognitos-sandboxhxvypjer/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 503, in get_a_sharepoint_file
+    parse_output = UrlParse.parse_sharepoint_url(value_dict['url'][1], is_folder=False)
+  File ""/tmp/kognitos-sandboxhxvypjer/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 286, in parse_sharepoint_url
+    assert parts[1] == 'sites'
+AssertionError
+",,,,,,
+6788or5g4yj5vtux8zb1s3u1o,2025-04-16 14:58:01.410910+00:00,cr5j8yyqey7dinjuyg8o2xbas,"Some runs have questions. Please handle the exceptions in the following pending runs:
+
+Worker ID: ec70o9fqsy6cj8vfhew9sgggi, State: waiting_for_user_input
+Worker ID: 6rn58ris0szd56ibx2tibagq0, State: waiting_for_user_input
+Worker ID: 9x6sy2wscgwt9cq6vbattj2be, State: waiting_for_user_input
+Worker ID: 1gkoacl5x6hza5j2qov0fiasp, State: waiting_for_user_input
+Worker ID: ddzdsdimam3rhliv1rbooluww, State: waiting_for_user_input
+Worker ID: 6zso46h184f02bnups564jx5p, State: waiting_for_user_input
+Worker ID: 6g93t4ekwwm8yztx12iwejcxu, State: waiting_for_user_input
+Worker ID: 2vjg9rfoch2wlf8zehcj7qpfo, State: waiting_for_user_input
+Worker ID: 3dflrno859ycbwgym3kw8smxt, State: waiting_for_user_input
+Worker ID: 5ft1getkfdywqdn08jvv2r53t, State: waiting_for_user_input
+
+Come back here and retry",NativeCodeErrorQuestion,,,,"It seems there was an issue while waiting for the runs, but the specific error message is missing from the traceback. This could indicate a timeout or connection error.
+
+To resolve this, I suggest you ""Try again from this point."" 
+
+If you need further assistance, feel free to contact the Kognitos support team.",,,,
+626mm93aukhn85ioswnuuaanc,2025-04-18 15:50:12.471363+00:00,c5y6e054c2q4q25d8w18t6e4p,"Could not process the statement ""the POST request's response as the result"".
+This is because the system hit an internal error. Please try editing the statement and rerunning.",NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/kognitos/brain/sentence.py"", line 727, in process
+    self._multi_strategy_process(ctx)
+  File ""/var/task/kognitos/brain/sentence.py"", line 1191, in _multi_strategy_process
+    raise ex
+  File ""/var/task/kognitos/brain/sentence.py"", line 1108, in _multi_strategy_process
+    self._process(ctx)
+  File ""/var/task/kognitos/brain/sentence.py"", line 1342, in _process
+    answer = ctx.evaluator.process_concrete_ast(ctx, self.ast)
+  File ""/var/task/ddtrace/tracer.py"", line 984, in func_wrapper
+    return f(*args, **kwargs)
+  File ""/var/task/kognitos/brain/evaluator/evaluator.py"", line 2670, in process_concrete_ast
+    ast.answer = self.fn(ast.function)(ctx, **kwargs)
+  File ""/var/task/ddtrace/tracer.py"", line 984, in func_wrapper
+    return f(*args, **kwargs)
+  File ""/var/task/kognitos/brain/evaluator/process_procedure.py"", line 98, in compute_concept_map
+    computable_list, missing_procedures = self.get_matching_computable(
+  File ""/var/task/ddtrace/tracer.py"", line 984, in func_wrapper
+    return f(*args, **kwargs)
+  File ""/var/task/kognitos/brain/evaluator/process_procedure.py"", line 510, in get_matching_computable
+    computable_list, missing_procedures = self.search_computable_list(
+  File ""/var/task/kognitos/brain/evaluator/procedure_resolution.py"", line 53, in search_computable_list
+    computable_list, missing_procedure = self._search_computable_list(
+  File ""/var/task/kognitos/brain/evaluator/procedure_resolution.py"", line 94, in _search_computable_list
+    ret, missing_procs = self.search_registry(
+  File ""/var/task/kognitos/brain/evaluator/procedure_resolution.py"", line 787, in search_registry
+    return self._search_registry(
+  File ""/var/task/kognitos/brain/evaluator/procedure_resolution.py"", line 1190, in _search_registry
+    all_equiv_cpts_iter = itertools.product(*all_equiv_cpts)
+  File ""/var/task/kognitos/brain/evaluator/procedure_resolution.py"", line 1049, in cpts_with_distance
+    for cpt in list_of_cpts:
+  File ""/var/task/kognitos/brain/evaluator/procedure_resolution.py"", line 1067, in filter_equivalent_concepts
+    for equiv_cpt in equiv_cpts:
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 705, in find_equivalent_concepts
+    yield from self.equiv(include_derived_from=include_derived_from)
+  File ""/var/task/kognitos/common/utils.py"", line 61, in wrapper
+    return cached_func(self, *args, **kwargs)
+  File ""/var/task/cachetools/func.py"", line 66, in wrapper
+    v = func(*args, **kwargs)
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 413, in equiv
+    return self._equiv_list(include_self, include_derived_from)
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 418, in _equiv_list
+    return list(self._equiv(include_self, include_derived_from))
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 516, in _equiv
+    for sibling in cousin.siblings(allowed_edges):
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 575, in siblings
+    ) in self.find_all_derived_conceptual_siblings_with_edges(edges, self, False):
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 300, in find_all_derived_conceptual_siblings_with_edges
+    for c in self.find_inbound(Relation(collection.IsA)).unnamed_cpts():
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 631, in find_inbound
+    return self.find(*relations, direction=relation.DirectionInbound)
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 656, in find
+    to_cpts.extend(cpt.find_one_step(r, direction))
+  File ""/var/task/kognitos/brain/concept/_find.py"", line 622, in find_one_step
+    v.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+",,"The error traceback indicates that the system encountered an ""AttributeError"" because it tried to access the 'id' attribute of a 'NoneType' object, meaning it expected a value but found nothing instead.
+
+To resolve this issue, I suggest you ""Teach a technique via English sentences"" to better understand how to handle such errors in the future. 
+
+If you need further assistance, feel free to contact the Kognitos support team.",,,,
+auaqru9ci3fw1sateo2djccm9,2025-02-11 13:24:54.324520+00:00,2ostoi3ctwcc1akwivpxx38mc,Could not move a file to a folder.,NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/app/app.py"", line 101, in invoke_function
+    ret = fn(**kwargs)
+  File ""/tmp/kognitos-sandbox3b8ek9_v/f3061a23ae67c3197e7e8a1a89ad61ef3571ae6fae1624ced02814ed2aceabd6.py"", line 1337, in to_move_a_file_to_a_folder
+    move_file_within_sharepoint_folder(
+  File ""/tmp/kognitos-sandbox3b8ek9_v/f3061a23ae67c3197e7e8a1a89ad61ef3571ae6fae1624ced02814ed2aceabd6.py"", line 468, in move_file_within_sharepoint_folder
+    resp.raise_for_status()  # successful status code is 202
+  File ""/var/task/requests/models.py"", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://graph.microsoft.com/v1.0/drives/b!q-TZCerAUU2KAuctRQm7P_cV_kRyoc1Op5DkLREDnInqbBDsPISqRYWPI45CTf_T/items/None/copy?%40microsoft.graph.conflictBehavior=replace
+",,"The error message ""404 Client Error: Not Found"" indicates that the system couldn't find the specified file or folder to move the file to.
+
+Since the error suggests that a record (in this case, likely a file or folder) does not exist, I recommend creating the necessary file or folder first and then ""Try again from this point.""
+
+If you need further assistance, feel free to contact the Kognitos support team.",,,,
+4ole0t5akehjlcc3k65jnrfzn,2025-03-31 18:12:58.435809+00:00,0wayv7w36cxbnf1gxcyo5fla0,Could not get a string as a json.,NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/kognitos/domains/internal/json.py"", line 317, in to_get_a_string_as_a_json
+    json_val = json.loads(value)
+  File ""/var/lang/lib/python3.9/json/__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+  File ""/var/lang/lib/python3.9/json/decoder.py"", line 340, in decode
+    raise JSONDecodeError(""Extra data"", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 430 (char 429)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""/var/task/kognitos/sandbox/python/app/app.py"", line 101, in invoke_function
+    ret = fn(**kwargs)
+  File ""/var/task/kognitos/domains/internal/json.py"", line 320, in to_get_a_string_as_a_json
+    raise ValueError(f""Could not parse {value} as json"")
+ValueError: Could not parse {""csn_at_month_end"": 18505.0, ""csn_at_month_start_f"": 18348.0, ""cycles_during_month"": 157.0, ""id"": ""a5Tbb000008M2oAEAS"", ""name"": ""Airframe-Feb 2025"", ""running_hours_during_month"": 219.22, ""serial_number"": ""40134"", ""tsn_at_month_end"": 38232.95, ""tsn_at_month_start_f"": 38013.73, ""type_attribute"": ""leaseworks__Assembly_Utilization__c"", ""url"": ""/services/data/v61.0/sobjects/leaseworks__Assembly_Utilization__c/a5Tbb000008M2oAEAS""}"", ""{""csn_at_month_end"": 24934.0, ""csn_at_month_start_f"": 24892.0, ""cycles_during_month"": 42.0, ""id"": ""a5Tbb000008M2oBEAS"", ""name"": ""APU-Feb 2025"", ""running_hours_during_month"": 35.57, ""serial_number"": ""P-9177"", ""tsn_at_month_end"": 24417.37, ""tsn_at_month_start_f"": 24381.8, ""type_attribute"": ""leaseworks__Assembly_Utilization__c"", ""url"": ""/services/data/v61.0/sobjects/leaseworks__Assembly_Utilization__c/a5Tbb000008M2oBEAS""}"", ""{""csn_at_month_end"": 19404.0, ""csn_at_month_start_f"": 19247.0, ""cycles_during_month"": 157.0, ""id"": ""a5Tbb000008M2oCEAS"", ""name"": ""Landing Gear - Left Main-Feb 2025"", ""running_hours_during_month"": 219.22, ""serial_number"": ""MAL07701Y3723"", ""tsn_at_month_end"": 40161.46, ""tsn_at_month_start_f"": 39942.24, ""type_attribute"": ""leaseworks__Assembly_Utilization__c"", ""url"": ""/services/data/v61.0/sobjects/leaseworks__Assembly_Utilization__c/a5Tbb000008M2oCEAS""}"", ""{""csn_at_month_end"": 19404.0, ""csn_at_month_start_f"": 19247.0, ""cycles_during_month"": 157.0, ""id"": ""a5Tbb000008M2oDEAS"", ""name"": ""Landing Gear - Right Main-Feb 2025"", ""running_hours_during_month"": 219.22, ""serial_number"": ""MAL07702Y3723"", ""tsn_at_month_end"": 40161.46, ""tsn_at_month_start_f"": 39942.24, ""type_attribute"": ""leaseworks__Assembly_Utilization__c"", ""url"": ""/services/data/v61.0/sobjects/leaseworks__Assembly_Utilization__c/a5Tbb000008M2oDEAS""}"", ""{""csn_at_month_end"": 19404.0, ""csn_at_month_start_f"": 19247.0, ""cycles_during_month"": 157.0, ""id"": ""a5Tbb000008M2oEEAS"", ""name"": ""Landing Gear - Nose-Feb 2025"", ""running_hours_during_month"": 219.22, ""serial_number"": ""MAL02951Y3723"", ""tsn_at_month_end"": 40161.46, ""tsn_at_month_start_f"": 39942.24, ""type_attribute"": ""leaseworks__Assembly_Utilization__c"", ""url"": ""/services/data/v61.0/sobjects/leaseworks__Assembly_Utilization__c/a5Tbb000008M2oEEAS""}"", ""{""csn_at_month_end"": 18111.0, ""csn_at_month_start_f"": 17954.0, ""cycles_during_month"": 157.0, ""id"": ""a5Tbb000008M2oFEAS"", ""name"": ""Engine 1-Feb 2025"", ""running_hours_during_month"": 219.22, ""serial_number"": ""960515"", ""tsn_at_month_end"": 37698.68, ""tsn_at_month_start_f"": 37479.46, ""type_attribute"": ""leaseworks__Assembly_Utilization__c"", ""url"": ""/services/data/v61.0/sobjects/leaseworks__Assembly_Utilization__c/a5Tbb000008M2oFEAS""}"", ""{""csn_at_month_end"": 17689.0, ""csn_at_month_start_f"": 17526.0, ""cycles_during_month"": 163.0, ""id"": ""a5Tbb000008M2oGEAS"", ""name"": ""Engine 2-Feb 2025"", ""running_hours_during_month"": 315.65, ""serial_number"": ""960517"", ""tsn_at_month_end"": 36517.25, ""tsn_at_month_start_f"": 36201.6, ""type_attribute"": ""leaseworks__Assembly_Utilization__c"", ""url"": ""/services/data/v61.0/sobjects/leaseworks__Assembly_Utilization__c/a5Tbb000008M2oGEAS""} as json
+",,"The error message ""ValueError: Could not parse ... as json"" indicates that there is an issue with the JSON format being processed, specifically that there is ""Extra data"" present which makes it invalid.
+
+To resolve this, please ""Provide exact value"" for the JSON string you are trying to parse. 
+
+If you need further assistance, feel free to contact the Kognitos support team.",,,,
+0v0gl6yynhmqcd2792wyr5055,2025-05-07 10:07:56.579598+00:00,2ktevvoxjpuy0kwqaji8yi0vm,Could not get sharepoint's thing.,NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/app/app.py"", line 101, in invoke_function
+    ret = fn(**kwargs)
+  File ""/tmp/kognitos-sandboxo4to3za6/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 772, in to_get_a_sharepoint_thing
+    return get_a_sharepoint_file(brain, access_token, thing_cpt)
+  File ""/tmp/kognitos-sandboxo4to3za6/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 503, in get_a_sharepoint_file
+    parse_output = UrlParse.parse_sharepoint_url(value_dict['url'][1], is_folder=False)
+  File ""/tmp/kognitos-sandboxo4to3za6/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 286, in parse_sharepoint_url
+    assert parts[1] == 'sites'
+AssertionError
+",,,,,,
+d31a6miqxwli6rfsoi66wdddh,2025-04-06 11:37:57.075859+00:00,0q22ngaeygt6v6j4ilrmrhwk9,"Could not process the statement ""to set a salesobject's thing to a string"".
+This is because the system hit an internal error. Please try editing the statement and rerunning.",NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/kognitos/brain/sentence.py"", line 727, in process
+    self._multi_strategy_process(ctx)
+  File ""/var/task/kognitos/brain/sentence.py"", line 1191, in _multi_strategy_process
+    raise ex
+  File ""/var/task/kognitos/brain/sentence.py"", line 1108, in _multi_strategy_process
+    self._process(ctx)
+  File ""/var/task/kognitos/brain/sentence.py"", line 1329, in _process
+    answer = ctx.process_procedure(sast)
+  File ""/var/task/kognitos/brain/context.py"", line 1807, in process_procedure
+    answer = self.native_processor.process(
+  File ""/var/task/kognitos/brain/native/__init__.py"", line 197, in process
+    result = call()
+  File ""/var/task/kognitos/brain/native/__init__.py"", line 509, in __call__
+    self._get_integration_credential_ahead_of_procedure_invocation(
+  File ""/var/task/kognitos/brain/native/__init__.py"", line 456, in _get_integration_credential_ahead_of_procedure_invocation
+    return self._get_integration_credential()
+  File ""/var/task/kognitos/brain/native/__init__.py"", line 423, in _get_integration_credential
+    return self.state.reader.resolve_integration_credential(
+  File ""/var/task/kognitos/brain/native/state.py"", line 115, in resolve_integration_credential
+    integration_credential = self.embedded_evaluator.resolve_integration_credential(
+  File ""/var/task/kognitos/brain/embedded_evaluator.py"", line 604, in resolve_integration_credential
+    and err.errors[0].original.get(""extensions"", {}).get(""code"")
+AttributeError: 'GraphQLClientHttpError' object has no attribute 'errors'
+",,"The error traceback indicates that there was an internal error while processing the statement, specifically an `AttributeError` stating that a 'GraphQLClientHttpError' object has no attribute 'errors'. 
+
+Since this error seems to be related to a credential issue with an external service, please provide new credentials and then ""Try again from this point"". 
+
+If you need any additional help, feel free to contact the Kognitos support team.",,,,
+7knwp6sx4900raqau8vp7qpow,2025-05-07 08:36:56.227129+00:00,2tst1au4miatvw3c09azf9cyi,Could not get sharepoint's thing.,NativeCodeErrorQuestion,,"Traceback (most recent call last):
+  File ""/var/task/app/app.py"", line 101, in invoke_function
+    ret = fn(**kwargs)
+  File ""/tmp/kognitos-sandboxmv50vlfh/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 772, in to_get_a_sharepoint_thing
+    return get_a_sharepoint_file(brain, access_token, thing_cpt)
+  File ""/tmp/kognitos-sandboxmv50vlfh/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 503, in get_a_sharepoint_file
+    parse_output = UrlParse.parse_sharepoint_url(value_dict['url'][1], is_folder=False)
+  File ""/tmp/kognitos-sandboxmv50vlfh/4bf403108f4f2c033883734da340d7d56b551a86bf3b7016c4c399214a468350.py"", line 286, in parse_sharepoint_url
+    assert parts[1] == 'sites'
+AssertionError
+",,,,,,
+3uoqgawfj15k9ldtweze1of5f,2025-02-27 01:30:33.766544+00:00,e69bgk753l74iky8b1ewxpsag,"I don't know how to src_concept{""uuid"": ""4qg34vc5rm819pmfmkia0q4c4"", ""id"": ""concept/4qg34vc5rm819pmfmkia0q4c4"", ""name"": ""split"", ""other_names"": [""a split""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""9t8vhiefw2xp9g86njloca8qy"", ""id"": ""concept/9t8vhiefw2xp9g86njloca8qy"", ""name"": ""a second movement type"", ""other_names"": [""a second movement type""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+set the request's carrier_so to the BookingNumber
+get the document's ""SERVICE TYPE/MODE""
+split that with
+  the delimiter is "")/(""
+get the above as the movement types
+split the second movement type with  <--- the error happened here
+  the delimiter is ""/""
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+2jyftvodrhm3x7kqlhdxi6zqr,2025-05-07 15:42:25.892474+00:00,7h148v4cq0ibwbu94mz8ly9wa,"I don't know how to src_concept{""uuid"": ""9426tahfb0ql17fiy1qbpvlvf"", ""id"": ""concept/9426tahfb0ql17fiy1qbpvlvf"", ""name"": ""convert"", ""other_names"": [""a convert""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""2p89qrgxo3o5bll8u2illgibr"", ""id"": ""concept/2p89qrgxo3o5bll8u2illgibr"", ""name"": ""a file format"", ""other_names"": [""a file format""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} to src_concept{""uuid"": ""6wd2ld62nmsyqj13vpe9s29p9"", ""id"": ""concept/6wd2ld62nmsyqj13vpe9s29p9"", ""name"": ""a xlsx"", ""other_names"": [""a xlsx""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+upload a file
+use the above as the file
+convert the file format to a xlsx  <--- the error happened here
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+63lcvpz11an60ndiqy36ayvij,2025-01-20 02:15:57.984690+00:00,aw3lrjc5wabfe7sqt1uky72tk,"I don't know how to src_concept{""uuid"": ""clensj4mtpkc8fzdc73a09jxl"", ""id"": ""concept/clensj4mtpkc8fzdc73a09jxl"", ""name"": ""split"", ""other_names"": [""a split""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""8o2nqs2tokticq4gi3wv5f5k1"", ""id"": ""concept/8o2nqs2tokticq4gi3wv5f5k1"", ""name"": ""a second movement type"", ""other_names"": [""a second movement type""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+set the request's carrier_so to the BookingNumber
+get the document's ""SERVICE TYPE/MODE""
+split that with
+  the delimiter is "")/(""
+get the above as the movement types
+split the second movement type with  <--- the error happened here
+  the delimiter is ""/""
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+2z2fgqt8r0d351c73wxuw4oun,2025-03-04 10:26:48.934283+00:00,2b81sf7zhftt1t5hl82n2vycq,"I don't know how to src_concept{""uuid"": ""4hhb8c4cfqd1et9sh2ylr9hzz"", ""id"": ""concept/4hhb8c4cfqd1et9sh2ylr9hzz"", ""name"": ""start"", ""other_names"": [""a start""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""3vhg67fzoo4m2076gv8o6wh8a"", ""id"": ""concept/3vhg67fzoo4m2076gv8o6wh8a"", ""name"": ""a run"", ""other_names"": [""a run""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+  the document
+  the task is Type 1\"", \, \, \, or \ based on your classification.\r\n\r\n"" ""<masked>""
+  the openai model is ""gpt-4o-latest""
+get the above as the type
+start a run where  <--- the error happened here
+  the procedure is ""to extract the part{type}""
+  the file is the attachment
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+clhq9jmz6epx28qjsthiucway,2025-01-22 02:43:47.138553+00:00,9zkgiq5e8ego369bdhd27zep6,"I don't know how to src_concept{""uuid"": ""60wlzkmfn64tpilx80sxyeavr"", ""id"": ""concept/60wlzkmfn64tpilx80sxyeavr"", ""name"": ""split"", ""other_names"": [""a split""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""17a3o97dkxut9f3k0b6q81od8"", ""id"": ""concept/17a3o97dkxut9f3k0b6q81od8"", ""name"": ""a second movement type"", ""other_names"": [""a second movement type""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+set the request's carrier_so to the BookingNumber
+get the document's ""SERVICE TYPE/MODE""
+split that with
+  the delimiter is "")/(""
+get the above as the movement types
+split the second movement type with  <--- the error happened here
+  the delimiter is ""/""
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+3os7zlcuiv6ie3wcg4xvzfwfk,2025-01-27 18:48:12.957003+00:00,93ge40hsowwbp1woxq1zw0p2z,"I don't know how to src_concept{""uuid"": ""53hur6j9chapk1qrrozcqfwc0"", ""id"": ""concept/53hur6j9chapk1qrrozcqfwc0"", ""name"": ""set"", ""other_names"": [""a set""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""890wevpexwtn8jsmq36osflik"", ""id"": ""concept/890wevpexwtn8jsmq36osflik"", ""name"": ""a string"", ""other_names"": [""a string"", ""a text""], ""fact_type"": ""SENSITIVE"", ""display_value"": ""__sensitive__"", ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} to src_concept{""uuid"": ""013oycz5ljlgxpnl9viywsg1a"", ""id"": ""concept/013oycz5ljlgxpnl9viywsg1a"", ""name"": ""a json"", ""other_names"": [""a json""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+the string is '{""key"": ""value""}'
+set the string to a json  <--- the error happened here
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+3dhelxmztd0e73j1bq5sl4tyd,2025-01-24 07:14:54.015258+00:00,2hti748ikdauv8e36tiqw4oxf,"I don't know how to src_concept{""uuid"": ""e8s86mtz3osovk2k48vru26il"", ""id"": ""concept/e8s86mtz3osovk2k48vru26il"", ""name"": ""split"", ""other_names"": [""a split""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""edppis6c6siq3mn4fbgjv01de"", ""id"": ""concept/edppis6c6siq3mn4fbgjv01de"", ""name"": ""a second movement type"", ""other_names"": [""a second movement type""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+set the request's carrier_so to the BookingNumber
+get the document's ""SERVICE TYPE/MODE""
+split that with
+  the delimiter is "")/(""
+get the above as the movement types
+split the second movement type with  <--- the error happened here
+  the delimiter is ""/""
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+c0vwpozfy9v8zhjvjvdvh8s45,2025-03-07 14:34:51.900059+00:00,bjdapani0yfdw50usnha0g9kq,"I don't know how to src_concept{""uuid"": ""d9xgx0rya743a4f7y00sh7nbg"", ""id"": ""concept/d9xgx0rya743a4f7y00sh7nbg"", ""name"": ""check"", ""other_names"": [""a check""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+create a GLmatch table from the above rows
+the logic12 is ""In the provided table, Update the Difference value and round off the value to maximum 2 decimal points. If there is only zeros after the decimal then remove the decimal and convert it to int value. Print those rows.""
+the GLdiffmatch table is the GLdata table
+transform the GLdiffmatch table where
+  the transformation logics are the logic12
+
+check  <--- the error happened here
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+2e521tmmj12lyquidxio7wmwi,2025-01-15 18:48:38.881256+00:00,4xgidcplkxz33lw2qten64f0o,"I don't know how to src_concept{""uuid"": ""er5lhw0euon7j9pygcw9ysuus"", ""id"": ""concept/er5lhw0euon7j9pygcw9ysuus"", ""name"": ""remove"", ""other_names"": [""a remove""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""84l6xv1zz9w98njawixc8hr01"", ""id"": ""concept/84l6xv1zz9w98njawixc8hr01"", ""name"": ""a string"", ""other_names"": [""a string"", ""a text""], ""fact_type"": ""STRING"", ""display_value"": "".0"", ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} from src_concept{""uuid"": ""2wf841a0e81a8bd48hq4lpxst"", ""id"": ""concept/2wf841a0e81a8bd48hq4lpxst"", ""name"": ""an issue"", ""other_names"": [""an issue"", ""a number""], ""fact_type"": ""NUMBER"", ""display_value"": ""7"", ""is_location_present"": true, ""parent_fact_id"": ""concept/5g3aekleaxv3gjgve9wzi363u"", ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+the hasUniversalRate is ""No""
+#use issue to calculate the rate - make the issue an integer
+get the matchingrow's Issue as the issue
+if the issue is not empty then
+  the issue
+  remove "".0"" from the issue  <--- the error happened here
+  use the above as the issue
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+bc47e24nhteft1r27edmhewbl,2025-04-02 06:55:16.961479+00:00,1m4vt79gzkgnk42djtv5zjkgn,"I don't know how to src_concept{""uuid"": ""blfyacu8r6an3ee7am0coa3s7"", ""id"": ""concept/blfyacu8r6an3ee7am0coa3s7"", ""name"": ""rename"", ""other_names"": [""a rename""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} src_concept{""uuid"": ""71fb2qt65asrvxtf8uuj1ysa9"", ""id"": ""concept/71fb2qt65asrvxtf8uuj1ysa9"", ""name"": ""a Pre-Pack Inner"", ""other_names"": [""a Pre-Pack Inner""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false} to src_concept{""uuid"": ""09zfap7kqp7365ek7xsgce1c0"", ""id"": ""concept/09zfap7kqp7365ek7xsgce1c0"", ""name"": ""a Not Found"", ""other_names"": [""a Not Found""], ""fact_type"": null, ""is_location_present"": false, ""parent_fact_id"": null, ""are_relations_present"": false}.",ProcedureNotKnownQuestion,,,,"
+The error occurred when processing the below statements:
+the value1 is the row's Main Table Field
+the value2 is the row's Reference Table Field
+if the value1 is not the value2 then
+  say ""Mismatch found: {the value1} does not match {the value2}""
+  rename the Reference Table Field's value  to the Main Table Field's value   <--- the error happened here ""<masked>""
+  #rename the row's Reference Table Field's {the value2} with the row's Main Table Field's {the value1}
+  #change the row's Reference Table Field to the value1
+
+Please follow the steps below for troubleshooting:
+* Navigate to the **'Processes'** tab and verify if there exists a process with a similar name.
+* Switch to the **'Department'** tab, under which, locate **'Books'**. Check if there exists a book which needs to be learned.
+
+In the event that a process does not exist, a new one can be created using the following steps:
+* Navigate to the **'Playground'** tab and use **Koncierge** to create a new process.
+* Simply provide details about the intention of the failing line in natural English to **Koncierge**.
+* **Koncierge** will generate and suggest available language options to achieve the said objective.
+* Once satisfied, save the newly minted process using the 'Create Process from Run' feature in the playground. Following which, execute an automation retry.
+
+For any additional assistance, please do not hesitate to contact **Kognitos** support team.
+",,,,
+7gg3n9zefabwrj3372u909uby,2025-02-06 02:58:39.393408+00:00,epj4kjl9ezqwf4nnn13fs4w10,"Could not ensure that the weight prior and gross is not ""0"".",EnsureFailedQuestion,,,,,,,,
+dvgcr97nmgohfu7j1p8ehp4v8,2025-04-30 09:21:01.553492+00:00,1sgch9dentdlyydrn5s821v8p,"Could not ensure that the prior carton is not ""0"".",EnsureFailedQuestion,,,,,,,,
+d8sjai2k654tcxhwcsrmpikgr,2025-03-31 06:17:02.002878+00:00,9gpggzfzvrbb3eda63013o8z5,"Could not ensure that the prior cbm is not ""0"".",EnsureFailedQuestion,,,,,,,,
+8ks677xcz2960s3kgum1d47bj,2025-02-17 06:51:28.156656+00:00,7lcd6cfa11si1yj25el5blbsr,"Could not ensure that the weight prior and gross is not ""0"".",EnsureFailedQuestion,,,,,,,,
+9ls7e4r5rbvjpolra5uzw1y2r,2025-02-05 09:59:34.458610+00:00,1ztoljn0vr33pt8pm77ttqzjk,"Could not ensure that the weight prior and gross is not ""0"".",EnsureFailedQuestion,,,,,,,,
+80uc94lt41iibgne5q9v8bot4,2025-04-22 02:32:44.774828+00:00,7ed78kv83mcimsssy1ualfjva,"Could not ensure that the prior carton is not ""0"".",EnsureFailedQuestion,,,,,,,,
+e4el1jvv84tgok8tlwtd15xsz,2025-02-05 04:35:42.546435+00:00,64s9pzmdhi8gtbnihw7pey1gj,"Could not ensure that the weight prior and gross is not ""0"".",EnsureFailedQuestion,,,,,,,,
+c7ohhqgpaztyq8fv0y4jxqx9a,2025-02-05 12:39:12.520141+00:00,78xeu797hxadvkxsv1srqbnsh,"Could not ensure that the prior carton is not ""0"".",EnsureFailedQuestion,,,,,,,,
+06ab0mkz47qqwk8wgrmqk0fhq,2025-02-21 03:26:13.903896+00:00,0rv1t71b7p2e7dqtwcg5a6w4x,"Could not ensure that the weight prior and gross is not ""0"".",EnsureFailedQuestion,,,,,,,,
+0ti4crm5olceuwk7l62jpajhm,2025-03-17 06:54:20.627416+00:00,85n0xt0oo5bfhovul5tglu18x,"Could not ensure that the weight prior and gross is not ""0"".",EnsureFailedQuestion,,,,,,,,
+bpc722nao8o7dfc69jrahuxgf,2025-04-02 06:37:28.688529+00:00,0k88unj6et1ri5i9snjpg9l33,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""rename the row's Reference Table Field's {the value2} with the row's Main Table Field's {the value1}"", ""tagged_text"": ""VB=rename DT=the NN=row POS='s JJ=Reference JJ=Table NN=Field POS='s DT=the NN=value2 IN=with DT=the NN=row POS='s JJ=Main JJ=Table NN=Field POS='s DT=the NN=value1 ANY=__NEWLINE__"", ""error"": [""NoneType: None\n""], ""start_position"": 0, ""end_position"": 200, ""user_error"": """"}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+rename the row's Reference Table Field's {the value2} with the row's Main Table Field's {the value1}
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+1uwnfee2mo043yre3f0guwtm6,2025-05-06 21:47:04.411468+00:00,4bqamvqcm0kjb088xhlb6e659,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""process each column name out of the column names as follows:\nif the column name is \""district\"" then\n  say \""0\"""", ""tagged_text"": ""VB=process DT=each NN=column VB=name IN=out OF=of DT=the JJ=column NN=names IN=as NN=follows ANY=__NEWLINE__ | ANY= | __INDENT__ | WRB= | if | DT= | the | JJ= | column | NN= | name | VBZ= | is | JJ= | \""district\"" | ANY= | then | ANY= | __NEWLINE__ | ANY= | __INDENT__ | VB= | say | NN= | \""0\"" | ANY= | __NEWLINE__ | ANY= | __DEDENT__ | ANY= | __DEDENT__"", ""error"": [""NoneType: None\n""], ""start_position"": 0, ""end_position"": 216, ""user_error"": """"}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+process each column name out of the column names as follows:
+if the column name is ""district"" then
+  say ""0""
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+80jkn5oz06vs9nj9q7fd76m7k,2025-03-07 16:40:22.181936+00:00,a97k2l99xtqjt5vo7s3g0ow5p,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""if the input type is \""URL\"" then\n  ask Koncierge\n    the task is \""\""\""You are getting the html output from a website and i need to find sentiment analysis of the article.\\n\\nFollow the steps for this task:\\\n\\nthe Parent url is: {the url}\\\nGet the body of HTML page from {the content} \\\nthe organization that to be being assessed in this article is the organization name\\\ntranslate the extracted body text to english \\\nExtract details below details of the article\\n* Name of the Article\\\n* Name of the Author of the article \\\n* Sentiment Analysis of article towards the organization with three options to choose from Positive, Neutral and Negetive\\\n* Please highlight if the organization is mentioned multiple times or is it a passthrough with options to choose from Dominant and passthrough\\\n* Please highlight if there was any organization's product specific prices or url's mentioned in the article\\\n* Please highlight if there was any other website urls mentioned for organisation's product's\\\n\\nGive the output as text variable\""\""\""\n  else\n  if the input type is \""PDF\"" then\n    ask Koncierge\n      the task is \""\""\""You are getting the html output from a website and i need to fine sentiment analysis of the article.\\n\\nFollow the steps for this task:\\\n\\n\\nthe organization name is : {the organization name}\\\nthe content is : {the content}\\\nthe organization that to be being assessed in this article is the organization name\\\ntranslate the extracted body text to english \\\nExtract details below details of the article.\\\n* Name of the Article\\\n* Name of the Author of the article \\\n* Sentiment Analysis of article towards the organization with three options to choose from Positive, Neutral and Negetive\\\n* Please highlight if the organization is mentioned multiple times or is it a passthrough with options to choose from Dominant and passthrough\\\n* Please highlight if there was any organization product specific prices or url's mentioned in the article\\\n* Please highlight if there was any other website urls mentioned for Lego product's\\\n\\nGive the output as text variable\""\""\""\n  "", ""tagged_text"": ""WRB=if DT=the JJ=input NN=type VBZ=is JJ=\""URL\"" ANY=then ANY=__NEWLINE__ ANY=__INDENT__ VB=ask NN=Koncierge ANY=__NEWLINE__ ANY=__INDENT__ DT=the NN=task VBZ=is JJ=\""\""\""You are getting the html output from a website and i need to find sentiment analysis of the article.\\n\\nFollow the steps for this task:\\ __NEWLINE__  __DEDENT__ __DEDENT__ \\nthe Parent url is: {the url}\\ __NEWLINE__  Get the body of HTML page from {the content} \\ __NEWLINE__  the organization that to be being assessed in this article is the organization name\\ __NEWLINE__  translate the extracted body text to english \\ __NEWLINE__  Extract details below details of the article\\n* Name of the Article\\ __NEWLINE__  __INDENT__ * Name of the Author of the article \\ __NEWLINE__  * Sentiment Analysis of article towards the organization with three options to choose from Positive, Neutral and Negetive\\ __NEWLINE__  * Please highlight if the organization is mentioned multiple times or is it a passthrough with options to choose from Dominant and passthrough\\ __NEWLINE__  * Please highlight if there was any organization's product specific prices or url's mentioned in the article\\ __NEWLINE__  * Please highlight if there was any other website urls mentioned for organisation's product's\\ __NEWLINE__  __DEDENT__ \\nGive the output as text variable\""\""\"" ANY=__NEWLINE__ ANY=__INDENT__ CC=else ANY=__NEWLINE__ WRB=if DT=the JJ=input NN=type VBZ=is JJ=\""PDF\"" ANY=then ANY=__NEWLINE__ ANY=__INDENT__ VB=ask NN=Koncierge ANY=__NEWLINE__ ANY=__INDENT__ DT=the NN=task VBZ=is JJ=\""\""\""You are getting the html output from a website and i need to fine sentiment analysis of the article.\\n\\nFollow the steps for this task:\\ __NEWLINE__  __DEDENT__ __DEDENT__ __DEDENT__ \\n\\nthe organization name is : {the organization name}\\ __NEWLINE__  the content is : {the content}\\ __NEWLINE__  the organization that to be being assessed in this article is the organization name\\ __NEWLINE__  translate the extracted body text to english \\ __NEWLINE__  Extract details below details of the article.\\ __NEWLINE__  __INDENT__ * Name of the Article\\ __NEWLINE__  * Name of the Author of the article \\ __NEWLINE__  * Sentiment Analysis of article towards the organization with three options to choose from Positive, Neutral and Negetive\\ __NEWLINE__  * Please highlight if the organization is mentioned multiple times or is it a passthrough with options to choose from Dominant and passthrough\\ __NEWLINE__  * Please highlight if there was any organization product specific prices or url's mentioned in the article\\ __NEWLINE__  * Please highlight if there was any other website urls mentioned for Lego product's\\ __NEWLINE__  __DEDENT__ \\nGive the output as text variable\""\""\"" ANY=__NEWLINE__ ANY=__NEWLINE__"", ""error"": [""Traceback (most recent call last):\n"", ""  File \""/var/task/alang/parser5.py\"", line 1823, in parse\n    parse_tree = self.parser.parse(tagged_text)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 1498, in parse\n    self.parse_tree = self._parse()\n"", ""  File \""/var/task/arpeggio/peg.py\"", line 279, in _parse\n    return self.parser_model.parse(self)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 286, in parse\n    result = self._parse(parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 365, in _parse\n    result = e.parse(parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 786, in parse\n    result = self._parse(parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 939, in _parse\n    parser._nm_raise(self, c_pos, parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 1700, in _nm_raise\n    raise self.nm\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 446, in _parse\n    result = [self.nodes[0].parse(parser)]\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 286, in parse\n    result = self._parse(parser)\n"", ""arpeggio.NoMatch: Expected 'ANY=' or 'ANY=' at position (1, 1350) => '_INDENT__ *CC=else AN'.\n""], ""start_position"": 0, ""end_position"": 2077, ""user_error"": ""Expected 'ANY=' or 'ANY=' at position (1, 1350) => '_INDENT__ *CC=else AN'.""}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+    ask Koncierge
+      the task is """"""You are getting the html output from a website and i need to fine sentiment analysis of the article.\n\nFollow the steps for this task:\
+\n\nthe organization name is : {the organization name}\
+the content is : {the content}\
+the organization that to be being assessed in this article is the organization name\
+translate the extracted body text to english \
+Extract details below details of the article.\
+* Name of the Article\
+* Name of the Author of the article \
+* Sentiment Analysis of article towards the organization with three options to choose from Positive, Neutral and Negetive\
+* Please highlight if the organization is mentioned multiple times or is it a passthrough with options to choose from Dominant and passthrough\
+* Please highlight if there was any organization product specific prices or url's mentioned in the article\
+* Please highlight if there was any other website urls mentioned for Lego product's\
+\nGive the output as text variable""""""
+
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+an90fknpp57qt0sg0uuwvmm6r,2025-04-02 16:13:44.106983+00:00,8fx5sxwjnc1o6qy4woz9ype3b,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""error"": [], ""text"": ""get the above as the the vms_carrier_request"", ""tagged_text"": ""VB=get DT=the NN=above IN=as DT=the DT=the NN=vms_carrier_request ANY=__NEWLINE__""}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+get the above as the the vms_carrier_request
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+1avpt9upum4ufi5e7n8na3vnx,2025-04-03 12:01:35.276831+00:00,3yuoi6a9y1ja5n22p7kowggf5,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""upload an excel named \""Buyers.xlsx\"""", ""tagged_text"": ""VB=upload DT=an NN=excel VB=named NN=\""Buyers.xlsx\"" ANY=__NEWLINE__"", ""error"": [""NoneType: None\n""], ""start_position"": 0, ""end_position"": 70, ""user_error"": """"}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+upload an excel named ""Buyers.xlsx""
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+1oq6ww4av0z3k4y71su48wwfi,2025-01-15 20:48:39.680396+00:00,2wscs3xhxzqzimbxflluhna9m,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""the prompt is \""\""\""Task: Extract the PNR number based on the following criteria:"", ""tagged_text"": ""DT=the NN=prompt VBZ=is JJ=\""\"" JJ=Task NN=Extract DT=the JJ=PNR NN=number JJ=based IN=on DT=the JJ=following NN=criteria ANY=__NEWLINE__"", ""error"": [""NoneType: None\n""], ""start_position"": 0, ""end_position"": 156, ""user_error"": """"}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+the prompt is """"""Task: Extract the PNR number based on the following criteria:
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+ac8diyys6vxyldwui7kaxduaa,2025-04-11 14:37:49.103453+00:00,24bh565eylhttu6d3q90pcbcd,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""/firstname_p/"", ""tagged_text"": ""ANY=/ NN=firstname_p ANY=/ ANY=__NEWLINE__"", ""error"": [""NoneType: None\n""], ""start_position"": 0, ""end_position"": 26, ""user_error"": """"}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+/firstname_p/
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+493yh1h6cgjg2re7g225rni9d,2025-01-23 13:08:02.134789+00:00,a8skn0e887rlquelh0iggd9wl,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""extract data from the above result\nthe openai model is \""gpt-4o\""\nthe visual reference is the file\nthe first field is \""invoice date\""\nthe first field's format is \""string\""\nthe first field's rule is \""There is a date mentioned in the document. Response must be a single date which is present near the text 'Due Date'. In case these texts are not found, the response must be strictly the first date found. Print only the first date found. There is a possibility that during OCR an accidental comma or whitespace might be in the date. Change the date to format DD/MM/YYYY. Only dates until '{current date}' should be considered, others need to be excluded.\nthe result is the above"", ""tagged_text"": ""VB=extract NN=data IN=from DT=the JJ=above NN=result ANY=__NEWLINE__ ANY=__INDENT__ DT=the JJ=openai NN=model VBZ=is JJ=\""gpt-4o\"" ANY=__NEWLINE__ DT=the JJ=visual NN=reference VBZ=is DT=the NN=file ANY=__NEWLINE__ DT=the JJ=first NN=field VBZ=is JJ=\""invoice date\"" ANY=__NEWLINE__ DT=the JJ=first NN=field POS='s NN=format VBZ=is JJ=\""string\"" ANY=__NEWLINE__ DT=the JJ=first NN=field POS='s NN=rule VBZ=is NN=there VBZ=is DT=a NN=date JJ=mentioned IN=in DT=the JJ=document. JJ=Response JJ=must NN=be DT=a JJ=single NN=date WP=which VBZ=is JJ=present IN=near DT=the JJ=text JJ='Due Date' NN=. IN=in JJ=case JJ=these NN=texts VBZ=are RB=not JJ=found COMMA=, DT=the JJ=response JJ=must JJ=be JJ=strictly DT=the JJ=first JJ=date JJ=found. JJ=Print JJ=only DT=the JJ=first JJ=date JJ=found. NN=there VBZ=is DT=a JJ=possibility NN=that IN=during NN=OCR DT=an JJ=accidental NN=comma ANY=or JJ=whitespace JJ=might NN=be IN=in DT=the JJ=date. NN=Change DT=the NN=date TO=to JJ=format NN=DD ANY=/ NN=MM ANY=/ JJ=YYYY. JJ=Only NN=dates IN=until JJ='{current date}' JJ=should JJ=be JJ=considered COMMA=, JJ=others NN=need TO=to JJ=be NN=excluded. ANY=__NEWLINE__ DT=the NN=result VBZ=is DT=the NN=above ANY=__NEWLINE__ ANY=__DEDENT__"", ""error"": [""Traceback (most recent call last):\n"", ""  File \""/var/task/alang/parser5.py\"", line 1819, in parse\n    parse_tree = self.parser.parse(tagged_text)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 1498, in parse\n    self.parse_tree = self._parse()\n"", ""  File \""/var/task/arpeggio/peg.py\"", line 279, in _parse\n    return self.parser_model.parse(self)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 286, in parse\n    result = self._parse(parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 365, in _parse\n    result = e.parse(parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 786, in parse\n    result = self._parse(parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 939, in _parse\n    parser._nm_raise(self, c_pos, parser)\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 1700, in _nm_raise\n    raise self.nm\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 446, in _parse\n    result = [self.nodes[0].parse(parser)]\n"", ""  File \""/var/task/arpeggio/__init__.py\"", line 286, in parse\n    result = self._parse(parser)\n"", ""arpeggio.NoMatch: Expected 'ANY=' or '__[.a-z0-9]*__' or 'ANY=' or 'COMMENT=' or 'TO=' or 'IN=' or 'WRB=' or 'WRB=' or 'DT=' or 'DT=' or 'DT=' or 'DT=' or 'DT=' or 'NN=' or 'JJ=' or 'NN=' or 'JJ=' or 'RBS=' or 'RBS=' or 'JJS=' or 'CD=' or 'JJR=' or 'RBR=' or 'RBR=' or 'JJ=' or 'JJ=' or 'NN=' or 'JJ=' or 'NN=' or 'NN=' or 'NN=' or 'DT=' or 'DOCUMENT=' or 'ANY=' or 'LPAREN=' or 'WRB=' or 'RB=' or 'VB=' or 'VB=' or 'VB=' or 'IN=' or 'VB=' or 'WP=' or MD_CAN or MD_CAN or MD_CAN or MD_CAN or 'VBZ=' or 'IN=' or MD_CAN or MD_CAN or MD_CAN or MD_CAN or 'WP=' or 'WRB=' or 'NN=' or 'VB=' or 'VBZ=' or 'VBZ=' or 'VBZ=' or 'MD=' or ANYTHING or unparsable or 'ANY=' at position (1, 579) => 't JJ='Due *Date' NN=.'.\n""], ""start_position"": 0, ""end_position"": 672, ""user_error"": ""expected preposition, wh-adverb, determiner, to, etc but got noun""}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+extract data from the above result
+the openai model is ""gpt-4o""
+the visual reference is the file
+the first field is ""invoice date""
+the first field's format is ""string""
+the first field's rule is ""There is a date mentioned in the document. Response must be a single date which is present near the text 'Due Date'. In case these texts are not found, the response must be strictly the first date found. Print only the first date found. There is a possibility that during OCR an accidental comma or whitespace might be in the date. Change the date to format DD/MM/YYYY. Only dates until '{current date}' should be considered, others need to be excluded.
+the result is the above
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+2py99m6q3zbdxx2jnsw8heyda,2025-03-12 07:09:43.579303+00:00,51xsfjww4hp3bx85id3imncay,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""if the Description not equial to empty then\n  remove \""$\"" from the amount"", ""tagged_text"": ""WRB=if DT=the NN=Description RB=not NN=equial TO=to NN=empty ANY=then ANY=__NEWLINE__ | ANY= | __INDENT__ | VB= | remove | NN= | \""$\"" | IN= | from | DT= | the | NN= | amount | ANY= | __NEWLINE__ | ANY= | __DEDENT__"", ""error"": [""NoneType: None\n""], ""start_position"": 0, ""end_position"": 144, ""user_error"": """"}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+if the Description not equial to empty then
+  remove ""$"" from the amount
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+ewk6vk6qqa031be2uhbwbgbmo,2025-02-20 09:52:39.603515+00:00,9gqmzrc4qmdlpjepv3p5fc8nb,Could not parse,ParseErrorQuestion,,"{""parse_error"": {""text"": ""to read Bank with\nthe document is the file"", ""tagged_text"": ""TO=to VB=read NN=Bank IN=with ANY=__NEWLINE__ | ANY= | __INDENT__ | DT= | the | NN= | document | VBZ= | is | DT= | the | NN= | file | ANY= | __NEWLINE__ | ANY= | __DEDENT__"", ""error"": [""NoneType: None\n""], ""start_position"": 0, ""end_position"": 84, ""user_error"": """"}}",,"
+Apologies, we hit an error when trying to parse the below statement.
+to read Bank with
+the document is the file
+
+This usually means our system was not able to understand the statement.
+
+We would recommend to go through our documentation to get familiar with:
+- uploading documents
+- extracting information from different documents like invoices and bill of lading
+- integrating with your salesforce, hubspot accounts
+Please contact Kognitos support if you need any further help
+",,,,
+eah7k4w60uaj6nic14zz4hhz2,2025-05-01 17:13:37.403481+00:00,cwaqgzk5hq60p6nbhghfuqefx,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""01/29/2025""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure pickupdate is after the backdate""}]}, {""factV2"": {""name"": ""data's Gross Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""64300""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_3812a33f5b50b904930103da0aee3556_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_0f20ca534e0d9dc5545254eb0d44c9a0_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ff1a0c25aa5b044a54c832b4ec59ad96_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Tare Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""36800""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_4e956236ea78a9c01e7e2c8af9eed52d_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_9a9d47f17e4cfad46629baf3b8199b94_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Total Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""27500""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_7e03f40fa235a733069a7f131dc02f72_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Net Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""27500""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_f1fa979022b02ffba6e5c826ab40aa7e_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""27500""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ce98235d9ee1ca9a53d0a4de978850c6_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}]",
+daf57fyj03cf63m6dyjrbn27q,2025-04-29 14:11:59.184099+00:00,57v4712hy9e9hocxrbc5r6xgj,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""15240""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_21d6e5a100fe6dae7af9cfbbeae4fc15_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure data's weight is <some math>""}]}, {""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""04/14/2025""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}]",
+50cjz653nklprv4ayap6tr0wl,2025-04-17 11:41:38.906313+00:00,c3h7t463hylrpqy8i3ymnstm0,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""wait time"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""10""}}, ""lineValidationResultList"": [{""lineId"": ""DffHKsENF7N7fKmDN7CbHr_2025-04-17T11:41:07.247958+00:00"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure wait time is less than 10""}]}]",
+bmehmawg94izqo0yg8xh7y0z7,2025-05-01 17:51:56.326971+00:00,3yvwaouluficjkoyih49r12j7,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""11/01/2024""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure pickupdate is after the backdate""}]}, {""factV2"": {""name"": ""data's Gross Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""36400""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_3812a33f5b50b904930103da0aee3556_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_0f20ca534e0d9dc5545254eb0d44c9a0_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ff1a0c25aa5b044a54c832b4ec59ad96_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Tare Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""20620""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_4e956236ea78a9c01e7e2c8af9eed52d_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_9a9d47f17e4cfad46629baf3b8199b94_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Total Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""15620""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_7e03f40fa235a733069a7f131dc02f72_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_8a206215975475b8ead444023282ffb9_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Net Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""15620""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_f1fa979022b02ffba6e5c826ab40aa7e_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""15620""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ce98235d9ee1ca9a53d0a4de978850c6_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure data's weight is <some math>""}]}]",
+5ffgtjmvzcalwq45vmipvsjr6,2025-05-01 18:05:48.299576+00:00,6aoqhf5sx9wjeusags6yo6nca,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""10/07/2024""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure pickupdate is after the backdate""}]}, {""factV2"": {""name"": ""data's Gross Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""77580""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_3812a33f5b50b904930103da0aee3556_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_0f20ca534e0d9dc5545254eb0d44c9a0_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ff1a0c25aa5b044a54c832b4ec59ad96_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Tare Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""42560""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_4e956236ea78a9c01e7e2c8af9eed52d_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_9a9d47f17e4cfad46629baf3b8199b94_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Total Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""35020""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_7e03f40fa235a733069a7f131dc02f72_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_8a206215975475b8ead444023282ffb9_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Net Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""35020""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_f1fa979022b02ffba6e5c826ab40aa7e_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""35020""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ce98235d9ee1ca9a53d0a4de978850c6_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}]",
+6t48e5oqzvwcigit7p3kx8958,2025-05-01 17:48:42.175672+00:00,0x3yv9u7vh0p6utq8x9sbkw6o,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""08/31/2024""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure pickupdate is after the backdate""}]}, {""factV2"": {""name"": ""data's Gross Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""67710.0""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_3812a33f5b50b904930103da0aee3556_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_0f20ca534e0d9dc5545254eb0d44c9a0_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ff1a0c25aa5b044a54c832b4ec59ad96_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Tare Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""44120.0""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_4e956236ea78a9c01e7e2c8af9eed52d_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_9a9d47f17e4cfad46629baf3b8199b94_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Total Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""23590.0""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_7e03f40fa235a733069a7f131dc02f72_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_8a206215975475b8ead444023282ffb9_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Net Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""23590.0""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_f1fa979022b02ffba6e5c826ab40aa7e_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""23590.0""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ce98235d9ee1ca9a53d0a4de978850c6_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}]",
+69nwb3mz59kbo35zsv3pxxx18,2025-04-17 17:49:04.911122+00:00,4rxicmb2bpzuz9a69dyszhkxe,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""25860""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_21d6e5a100fe6dae7af9cfbbeae4fc15_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""backdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""2025-01-17""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_6eb2b4f4f3c5e0d92d4dd4265f776ffe_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure backdate is before the pickupdate""}]}]",
+dlrti2ugrytjrjq5mt2jiiv0b,2025-05-01 17:48:44.553203+00:00,6xf54a2dm4pejnz2qc35edtnh,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""12/06/2024""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure pickupdate is after the backdate""}]}, {""factV2"": {""name"": ""data's Gross Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""46560""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_3812a33f5b50b904930103da0aee3556_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_0f20ca534e0d9dc5545254eb0d44c9a0_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ff1a0c25aa5b044a54c832b4ec59ad96_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Tare Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""36520""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_4e956236ea78a9c01e7e2c8af9eed52d_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_9a9d47f17e4cfad46629baf3b8199b94_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Total Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""10040""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_7e03f40fa235a733069a7f131dc02f72_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_8a206215975475b8ead444023282ffb9_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Net Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""10040""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_f1fa979022b02ffba6e5c826ab40aa7e_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""10040""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ce98235d9ee1ca9a53d0a4de978850c6_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}]",
+8t84wasjqp6mnv443uaicnhf3,2025-05-01 17:48:40.790011+00:00,09bcfsg2h5b9lqrbow4zknd4j,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""12/06/2024""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure pickupdate is after the backdate""}]}, {""factV2"": {""name"": ""data's Gross Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""46560""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_3812a33f5b50b904930103da0aee3556_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_0f20ca534e0d9dc5545254eb0d44c9a0_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ff1a0c25aa5b044a54c832b4ec59ad96_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Tare Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""36520""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_4e956236ea78a9c01e7e2c8af9eed52d_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_9a9d47f17e4cfad46629baf3b8199b94_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Total Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""10040""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_7e03f40fa235a733069a7f131dc02f72_0"", ""validationStatus"": ""PASSED"", ""message"": null}, {""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_8a206215975475b8ead444023282ffb9_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's Net Weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""10040""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_f1fa979022b02ffba6e5c826ab40aa7e_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""10040""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_ce98235d9ee1ca9a53d0a4de978850c6_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}]",
+0dzeany5nfsu0xamm075wct96,2025-04-30 17:49:05.278766+00:00,bjxoa2c6f8s941vp5li8ha2jx,Please review the following facts.,FactsValidationQuestion,,,,,,,"[{""factV2"": {""name"": ""data's total weight"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""NUMBER"", ""number"": ""27500""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_21d6e5a100fe6dae7af9cfbbeae4fc15_0"", ""validationStatus"": ""PASSED"", ""message"": null}]}, {""factV2"": {""name"": ""pickupdate"", ""class_type"": ""ConceptValue"", ""value"": {""type"": ""STRING"", ""string"": ""01/29/2025""}}, ""lineValidationResultList"": [{""lineId"": ""v2_fce2738c30f125fe7479c9d560c8017d_d40adade4b532b97a9b7c902208eab41_0"", ""validationStatus"": ""FAILED"", ""message"": ""Could not ensure pickupdate is after the backdate""}]}]",
+aelqk8rxu3m2yyh0ii6cd2xdv,2025-05-06 12:10:44.953715+00:00,5c6yxtda7w73zkmxj9xgipxg9,Credentials are invalid or expired for sharepoint. Please add new credentials and rerun.,InvalidIntegrationCredential,,,,,,sharepoint,,
+bsvlqpe78dyebslo53w4bnhkq,2025-05-06 12:09:01.534218+00:00,1lxvrpsia2cwx1hzjoco6cqa5,Credentials are invalid or expired for sharepoint. Please add new credentials and rerun.,InvalidIntegrationCredential,,,,,,sharepoint,,
+cxp9knbu4bxuxeccdsrsy3ush,2025-01-10 06:29:55.631120+00:00,6qt9e60kow2ivka1ry1np2wzo,Credentials are invalid or expired for sharepoint. Please add new credentials and rerun.,InvalidIntegrationCredential,,,,,,sharepoint,,
+ez45zb4qnyvtzip01l63orpfx,2025-03-07 18:44:34.417243+00:00,0k930ckzz03n4k4ofimkkraas,403 Client Error: Forbidden for url: https://api.powerbi.com/v1.0/Kognitos/datasets,InvalidIntegrationCredential,,,,,,http,,
+54ro6gusnkcqyfho8h1hahmre,2025-03-07 17:16:12.643195+00:00,0hlxtfj8piweypkm4ngns3y7p,403 Client Error: Forbidden for url: https://api.powerbi.com/v1.0/Kognitos/datasets,InvalidIntegrationCredential,,,,,,http,,
+2ch2wrydwttxfjfo9ry32svvi,2025-03-07 17:10:11.833395+00:00,55z419alkj4rp1o3b227con5x,403 Client Error: Forbidden for url: https://api.powerbi.com/v1.0/Kognitos/datasets,InvalidIntegrationCredential,,,,,,http,,
+8f92gjd27hcgnejb0lnwhzbvb,2025-01-10 16:03:25.154601+00:00,3rpfguhhvjuwu2vibkvliihbb,403 Client Error: Forbidden for url: https://app.safetyculture.com/report-exports/v3/47250c9b-1634-4202-9b4a-97a4d69b2cac/817b6909a3ec2ad278df1ccf0287fa39/01-10-2025.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAUNHTG7YV6ESXRZBV%2F20250110%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250110T145508Z&X-Amz-Expires=120&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEL7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB6iyLNEn6p5Llo7RqsABifVWO0hZjT%2FqdnV9%2FgHb6H7AiADaDoUjb0TI8S%2BkHubch5c2bX4djm3tARxpPcR15kMMCr%2BBAin%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAYaDDMwMzMwNTI2MDU4NyIM%2BSGw1UdaMlLEXH5VKtIEQH5iMY%2FI3adrrQLbhLLnnQuRmf4%2FZBF3lb9mUe9tHsd9XTy8qTQZ3ywGZlLDZkaoXIjme39suPzWSlfzAt2g5C4avIePBZFCAlsbY5Lojc71dwIXDsxv5K%2BjKld7GiMfYP911svNzojhvS9JwJt7G1ARcOJN%2BNrZBroLsBLjT1BN0gZhiQoKZn2Bdv1BXjIx5yzTZTh9RbB4YTRoWljMmumpIf7ZOrhw9SJ87QmRo9GAzMGo56IkAVBZC375ALUDZ2e5hl51c%2BPACOLGfkWdunUgLRZD37EtuBDGhMz%2F3NWarW0mLhsIS1k97G2cEm0oM%2FBLYWAa%2Fgzm4ZQMuVOKBk7L9KGX1bpsJIRtMAA%2FD52Oig3Wpxp1CjZkjGGe0WBrwn02XFPL2OtFTaiI%2FRYG%2B5Cnn8AEg3XR7KazJiTqAEFkPKBh3eFZhAaSr%2FhG98MpVpKtWg%2FSyApnhWlqNEfDwksx7OisYQsI6Mvpdt03Aq%2B0Xm6xFTfzEQl1iz6LA3kYvw2o8uiIu0eVgcKw15Fp6J7hmdI7fEaLIrDSFaLC5%2F%2FQ9l1E%2FlswwP%2BGbPXI2uR%2FGOCqyU5ZaO%2Fl1IjCJgh%2BTjMbA3iLV%2BWXwDuy2c4BHiUvBWAvOxVEO4KZjveMx0x9sVsqImcyFLEbVo2tPhfa37iV%2FF1zi46K%2FWmpVp9cRRWyBnLunRP0z4XZrgdLhC8t4bExdexFKm2PDBxz%2BBw04FkzxDEP9NVXt53FF1sPuaQQhz6sEi7v3zUqrwsIlGBhWlCoxNotR6YEGm1WwR%2BQZ8f%2BMMTNhLwGOpsB14cX99XtepRgzcLOKP1e3Wi1YsLkecLVfHx2%2Fr8UnEKjK%2FAjOGIkHouvze3ZnJeRZijxgETvmUoovoXH%2FfmFZRiakFtAYOU%2Fwmk85NWoskujTBuLKfp5rq%2FDFmGzFZSLFMWJBOgTN4wcEK1D6A6GQHqgQHpVldabBCo2u4eGPUGxqkU3VZq2MelVHJymIb7%2BsIGcs%2FiRoty0XSQ%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=ead097727a382d7ad1bfb7efce6020582a83cf86954e9e072741bc9881f6c251,InvalidIntegrationCredential,,,,,,http,,
+7itq565hh10bv00nq2semzzs4,2025-05-06 12:25:53.914497+00:00,dz5141cc2fov0eao7l74jh2t7,Credentials are invalid or expired for sharepoint. Please add new credentials and rerun.,InvalidIntegrationCredential,,,,,,sharepoint,,
+b3u7m3n3gfnmod3aodo9dyo5n,2025-03-07 17:14:14.264794+00:00,7nrj309xd13sumhjtp5yhj5lx,403 Client Error: Forbidden for url: https://api.powerbi.com/v1.0/Kognitos/datasets,InvalidIntegrationCredential,,,,,,http,,
+2hstez5bklx88xazwpjn41izb,2025-03-07 17:23:15.593055+00:00,2hta9dp53qjhuz8w9sna1r7pa,403 Client Error: Forbidden for url: https://api.powerbi.com/v1.0/Kognitos/datasets,InvalidIntegrationCredential,,,,,,http,,
+7kp6k3v6isgrm2r3eu765708t,2025-03-10 13:00:47.522255+00:00,c8i6k78o1mvfqlztetr10u13p,401 Client Error: Unauthorized for url: https://api.monday.com/v2,MissingIntegrationCredential,,,,,,http,,
+415oqckp5bpq0n2ttt9hr18ba,2025-04-08 19:43:12.679847+00:00,cxij6hjcyf5wtk2jkb0mezrtn,Please configure the integration's credentials,MissingIntegrationCredential,,,,,,,,
+7ov3z2umrbec895kvw8mx6azg,2025-04-14 10:31:44.002649+00:00,62cobhbc81dzbpz2fye3lyrnd,401 Client Error: Unauthorized for url: https://usosqa.wipro.com/s2p/ibps/1.0.0/query/dp,MissingIntegrationCredential,,,,,,http,,
+emfsy4dhd7g59xt3r6a7ro7ni,2025-02-07 16:29:15.175657+00:00,0m64k3zyhjbkbr5o0wrlv84zy,"Please configure the integration's credentials, or manually use the <connect> procedure",MissingIntegrationCredential,,,,,,,,
+e72niwkkysyb7st51z7khol1w,2025-04-08 19:46:30.184669+00:00,3x9rw2ez4baqj2n8gnxujqup1,Please configure the integration's credentials,MissingIntegrationCredential,,,,,,,,
+b3t9ncm127l8j2mav01bgyh6d,2025-02-06 21:46:36.317419+00:00,1q2lnaav1eatlejgdhsoiipl1,"401 Client Error: Unauthorized for url: https://leaseworks-airbornecapital--pc.sandbox.my.salesforce.com/services/data/v61.0/query/?q=SELECT+name,id,leaseworks__MSN_Number__c+from+leaseworks__Aircraft__c",MissingIntegrationCredential,,,,,,http,,
+b01smcmze4x983z1n0k6nyulw,2025-03-04 10:16:24.551584+00:00,bhf1r8mg4meiw3u3wt5vwrqwx,Credential is missing for salesforce. Please add and rerun again,MissingIntegrationCredential,,,,,,salesforce,,
+dl5c4fg1zrtw7qlqrjwm1c4og,2025-04-25 07:31:11.846861+00:00,3w1bdb523pxbx9e129zo8fh45,401 Client Error: Unauthorized for url: https://api.monday.com/v2,MissingIntegrationCredential,,,,,,http,,
+edw3ss5dspfysc9i6qyi1y35e,2025-01-28 16:03:15.784082+00:00,dd2tdjdssxxqwblrwbhghcfbb,401 Client Error: Unauthorized for url: https://leaseworks-airbornecapital--pc.sandbox.my.salesforce.com/services/data/v61.0/query?q=SELECT%2Bname%2Cid%2Cleaseworks__MSN_Number__c%2Bfrom%2Bleaseworks__Aircraft__c,MissingIntegrationCredential,,,,,,http,,
+92e3sh7g433g9fqhge2wr23g5,2025-04-01 13:28:52.422645+00:00,d53q0r0uoydbgsk88xpih751p,"Please configure the integration's credentials, or manually use the <connect> procedure",MissingIntegrationCredential,,,,,,,,
+9dof1y54fqu5u9ugz8mnpahf5,2025-02-07 20:45:02.150345+00:00,00m8wj0vlzeu3eo6l5ejiyej2,Please review,ReviewConceptQuestion,attachments|value,,,,,,,
+372v5vu523duzzinj8ycfka4v,2025-02-28 00:54:35.072608+00:00,0acls13j8hn4mriydvyvtqc9q,Please review,ReviewConceptQuestion,namespace|record|value,,,,,,,
