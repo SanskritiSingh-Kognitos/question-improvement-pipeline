@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Diagram - Question Improvement Pipeline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .pipeline-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            padding: 3rem;
+        }
+        
+        .step-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .step-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .step-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .step-description {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        
+        .arrow {
+            text-align: center;
+            font-size: 2rem;
+            color: #667eea;
+            margin: 1rem 0;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .metric-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+        }
+        
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 0.5rem;
+        }
+        
+        .decision-box {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            border: 3px dashed #ffc107;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        
+        .success-path {
+            border-left-color: #28a745;
+        }
+        
+        .ollama-path {
+            border-left-color: #ffc107;
+        }
+        
+        .final-step {
+            border-left-color: #28a745;
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+        }
+        
+        .flow-diagram {
+            position: relative;
+            margin: 2rem 0;
+        }
+        
+        .flow-line {
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            z-index: 1;
+        }
+        
+        .step-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .tech-stack {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .tech-item {
+            display: inline-block;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.5rem;
+            border: 2px solid #e9ecef;
+            font-weight: 500;
+        }
+        
+        .tech-item.python { border-color: #3776ab; color: #3776ab; }
+        .tech-item.flask { border-color: #000000; color: #000000; }
+        .tech-item.regex { border-color: #dc3545; color: #dc3545; }
+        .tech-item.ollama { border-color: #28a745; color: #28a745; }
+        .tech-item.metrics { border-color: #ffc107; color: #856404; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-brain"></i> Question Improvement Pipeline
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/metrics">
+                    <i class="fas fa-chart-line"></i> Metrics Analysis
+                </a>
+                <a class="nav-link" href="/improve">
+                    <i class="fas fa-magic"></i> Question Improvement
+                </a>
+                <a class="nav-link" href="/templates">
+                    <i class="fas fa-list"></i> Templates
+                </a>
+                <a class="nav-link active" href="/pipeline">
+                    <i class="fas fa-project-diagram"></i> Pipeline
+                </a>
+                <a class="nav-link" href="/demo">
+                    <i class="fas fa-play-circle"></i> Demo
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="pipeline-container">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 mb-3">
+                    <i class="fas fa-project-diagram"></i> Question Improvement Pipeline
+                </h1>
+                <p class="lead text-muted">
+                    A comprehensive workflow for enhancing question quality through template matching and AI polishing
+                </p>
+            </div>
+
+            <!-- Pipeline Steps -->
+            <div class="flow-diagram">
+                <!-- Step 1: Input -->
+                <div class="step-card step-content">
+                    <div class="step-number">1</div>
+                    <div class="text-center">
+                        <div class="step-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="step-title">Question Input</div>
+                        <div class="step-description">
+                            Raw questions from CSV files or user input are processed. 
+                            Questions may contain various formats, typos, or unclear phrasing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <!-- Step 2: Template Matching -->
+                <div class="step-card step-content">
+                    <div class="step-number">2</div>
+                    <div class="text-center">
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="step-title">Template Matching</div>
+                        <div class="step-description">
+                            Questions are matched against predefined templates using flexible regex patterns.
+                            The system combines question text and lexical path for better matching.
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value">93.2%</div>
+                                <div class="metric-label">Match Rate</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">Flexible</div>
+                                <div class="metric-label">Regex Patterns</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <!-- Step 3: Template Transformation -->
+                <div class="step-card step-content">
+                    <div class="step-number">3</div>
+                    <div class="text-center">
+                        <div class="step-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="step-title">Template Transformation</div>
+                        <div class="step-description">
+                            Matched questions are transformed using improved templates.
+                            Placeholders are replaced with actual values from the original question.
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value">4</div>
+                                <div class="metric-label">Quality Metrics</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">Enhanced</div>
+                                <div class="metric-label">Clarity & Actionability</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <!-- Decision Point -->
+                <div class="decision-box">
+                    <div class="step-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="step-title">Quality Assessment</div>
+                    <div class="step-description">
+                        Enhanced questions are scored across four metrics: Clarity, Conciseness, 
+                        Technical Accuracy, and Actionability. Average score determines next step.
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <!-- Step 4A: High Quality Path -->
+                <div class="step-card step-content success-path">
+                    <div class="step-number">4A</div>
+                    <div class="text-center">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-title">High Quality (Score ≥ 9.0)</div>
+                        <div class="step-description">
+                            Questions with high scores are considered sufficiently improved.
+                            No further processing needed - ready for use.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4B: Ollama Polishing Path -->
+                <div class="step-card step-content ollama-path">
+                    <div class="step-number">4B</div>
+                    <div class="text-center">
+                        <div class="step-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="step-title">Ollama AI Polishing (Score < 9.0)</div>
+                        <div class="step-description">
+                            Lower-scoring questions are sent to Ollama for AI-powered enhancement.
+                            Uses specialized prompts to improve clarity and technical accuracy.
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value">AI</div>
+                                <div class="metric-label">Powered Enhancement</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">Contextual</div>
+                                <div class="metric-label">Question Type Aware</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <!-- Final Step -->
+                <div class="step-card step-content final-step">
+                    <div class="step-number">5</div>
+                    <div class="text-center">
+                        <div class="step-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="step-title">Final Enhanced Question</div>
+                        <div class="step-description">
+                            The final improved question with enhanced metrics is ready for use.
+                            Significant improvements in clarity, conciseness, and actionability.
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-value">Improved</div>
+                                <div class="metric-label">Quality Score</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">Ready</div>
+                                <div class="metric-label">For Production</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="tech-stack">
+                <h4 class="text-center mb-4">
+                    <i class="fas fa-cogs"></i> Technology Stack
+                </h4>
+                <div class="text-center">
+                    <span class="tech-item python">
+                        <i class="fab fa-python"></i> Python
+                    </span>
+                    <span class="tech-item flask">
+                        <i class="fas fa-flask"></i> Flask
+                    </span>
+                    <span class="tech-item regex">
+                        <i class="fas fa-code"></i> Regex Matching
+                    </span>
+                    <span class="tech-item ollama">
+                        <i class="fas fa-robot"></i> Ollama AI
+                    </span>
+                    <span class="tech-item metrics">
+                        <i class="fas fa-chart-bar"></i> Quality Metrics
+                    </span>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                            <h5>Fast Processing</h5>
+                            <p class="text-muted">Efficient template matching with flexible regex patterns</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                            <h5>Quality Metrics</h5>
+                            <p class="text-muted">Comprehensive scoring across multiple dimensions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-robot fa-3x text-warning mb-3"></i>
+                            <h5>AI Enhancement</h5>
+                            <p class="text-muted">Intelligent polishing for low-scoring questions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add smooth scrolling and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.step-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+            
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html> 

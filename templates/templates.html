@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Templates - Question Improvement Pipeline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .template-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        .template-type {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px 10px 0 0;
+        }
+        .template-content {
+            padding: 1.5rem;
+        }
+        .original-template {
+            background-color: #f8f9fa;
+            border-left: 4px solid #dc3545;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        .improved-template {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .placeholder {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        .template-count {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .search-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .filter-btn {
+            margin: 0.25rem;
+        }
+        .filter-btn.active {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-brain"></i> Question Improvement Pipeline
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/metrics">
+                    <i class="fas fa-chart-line"></i> Metrics Analysis
+                </a>
+                <a class="nav-link" href="/improve">
+                    <i class="fas fa-magic"></i> Question Improvement
+                </a>
+                <a class="nav-link active" href="/templates">
+                    <i class="fas fa-list"></i> Templates
+                </a>
+                <a class="nav-link" href="/pipeline">
+                    <i class="fas fa-project-diagram"></i> Pipeline
+                </a>
+                <a class="nav-link" href="/demo">
+                    <i class="fas fa-play-circle"></i> Demo
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <!-- Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 mb-3">
+                <i class="fas fa-list"></i> Prompt Templates
+            </h1>
+            <p class="lead text-muted">
+                Browse all available templates for question improvement
+            </p>
+        </div>
+
+        <!-- Search and Filter Section -->
+        <div class="search-box">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-search"></i> Search Templates</h5>
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search templates...">
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fas fa-filter"></i> Filter by Type</h5>
+                    <div id="filterButtons">
+                        <button class="btn btn-light filter-btn active" data-filter="all">All Types</button>
+                        {% for qtype in prompt_templates.keys() %}
+                        <button class="btn btn-light filter-btn" data-filter="{{ qtype }}">{{ qtype }}</button>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Templates Display -->
+        <div id="templatesContainer">
+            {% for question_type, templates in prompt_templates.items() %}
+            <div class="template-card card" data-type="{{ question_type }}">
+                <div class="template-type">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="mb-0">
+                            <i class="fas fa-tag"></i> {{ question_type }}
+                        </h4>
+                        <span class="template-count">
+                            {{ templates|length }} template{{ 's' if templates|length != 1 else '' }}
+                        </span>
+                    </div>
+                </div>
+                <div class="template-content">
+                    {% for template in templates %}
+                    <div class="template-item mb-4" data-search="{{ template.original|lower }} {{ template.nicer|lower }}">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-danger mb-2">
+                                    <i class="fas fa-arrow-right"></i> Original Template
+                                </h6>
+                                <div class="original-template">
+                                    {{ template.original|replace('<', '<span class="placeholder">')|replace('>', '</span>')|safe }}
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-success mb-2">
+                                    <i class="fas fa-arrow-right"></i> Improved Version
+                                </h6>
+                                <div class="improved-template">
+                                    {{ template.nicer|replace('<', '<span class="placeholder">')|replace('>', '</span>')|safe }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Statistics -->
+        <div class="card mt-5">
+            <div class="card-body text-center">
+                <h5><i class="fas fa-chart-bar"></i> Template Statistics</h5>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="h4 text-primary">{{ stats.question_types }}</div>
+                        <small class="text-muted">Question Types</small>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="h4 text-success">{{ stats.total_templates }}</div>
+                        <small class="text-muted">Total Templates</small>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="h4 text-info">{{ stats.max_templates_per_type }}</div>
+                        <small class="text-muted">Max Templates per Type</small>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="h4 text-warning">{{ stats.avg_templates_per_type }}</div>
+                        <small class="text-muted">Avg Templates per Type</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const templateItems = document.querySelectorAll('.template-item');
+            
+            templateItems.forEach(item => {
+                const searchText = item.getAttribute('data-search');
+                if (searchText.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter templates
+                const templateCards = document.querySelectorAll('.template-card');
+                templateCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-type') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Highlight placeholders on hover
+        document.querySelectorAll('.placeholder').forEach(placeholder => {
+            placeholder.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#ffc107';
+                this.style.color = '#212529';
+            });
+            
+            placeholder.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '#fff3cd';
+                this.style.color = '#856404';
+            });
+        });
+    </script>
+</body>
+</html> 

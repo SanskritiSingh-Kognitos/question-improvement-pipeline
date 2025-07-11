@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Improvement Pipeline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .metric-score {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .improvement-positive {
+            color: #28a745;
+        }
+        .improvement-negative {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-brain"></i> Question Improvement Pipeline
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/metrics">
+                    <i class="fas fa-chart-line"></i> Metrics Analysis
+                </a>
+                <a class="nav-link" href="/improve">
+                    <i class="fas fa-magic"></i> Question Improvement
+                </a>
+                <a class="nav-link" href="/templates">
+                    <i class="fas fa-list"></i> Templates
+                </a>
+                <a class="nav-link" href="/pipeline">
+                    <i class="fas fa-project-diagram"></i> Pipeline
+                </a>
+                <a class="nav-link" href="/demo">
+                    <i class="fas fa-play-circle"></i> Demo
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">
+                <i class="fas fa-brain"></i> Question Improvement Pipeline
+            </h1>
+            <p class="lead mb-5">
+                Transform your questions with AI-powered template matching and Ollama polishing
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="/metrics" class="btn btn-light btn-lg me-3">
+                        <i class="fas fa-chart-line"></i> Analyze Metrics
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="/improve" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-magic"></i> Improve Questions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pipeline Features</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Metrics Analysis</h5>
+                            <p class="card-text">
+                                Analyze any text for clarity, conciseness, technical accuracy, and actionability.
+                                Get detailed metrics and enhanced scores.
+                            </p>
+                            <a href="/metrics" class="btn btn-primary">Try Metrics</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-magic fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Template Matching</h5>
+                            <p class="card-text">
+                                Match questions to predefined templates and transform them into more professional,
+                                actionable versions.
+                            </p>
+                            <a href="/improve" class="btn btn-success">Improve Questions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-robot fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Ollama Polishing</h5>
+                            <p class="card-text">
+                                Use Ollama AI models to further polish questions that score below 9.0,
+                                providing additional improvements.
+                            </p>
+                            <a href="/improve" class="btn btn-warning">Start Ollama</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row">
+                <div class="col-md-3 text-center mb-4">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="fas fa-edit fa-2x"></i>
+                    </div>
+                    <h5 class="mt-3">1. Input Question</h5>
+                    <p>Enter your question and select the appropriate question type.</p>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="fas fa-search fa-2x"></i>
+                    </div>
+                    <h5 class="mt-3">2. Template Matching</h5>
+                    <p>Our system matches your question to the best available template.</p>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="fas fa-robot fa-2x"></i>
+                    </div>
+                    <h5 class="mt-3">3. Ollama Polishing</h5>
+                    <p>If needed, Ollama AI further improves questions below the quality threshold.</p>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="fas fa-chart-bar fa-2x"></i>
+                    </div>
+                    <h5 class="mt-3">4. Metrics & Results</h5>
+                    <p>Get detailed metrics showing the improvement at each stage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Question Improvement Pipeline. Powered by AI and Ollama.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
